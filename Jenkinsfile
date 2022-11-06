@@ -40,12 +40,12 @@ pipeline {
 
             steps {
                 echo "deploying..."
-                withCredentials([
-                    usernamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD)
-                ]) {
-                    echo "some script ${USER} ${PWD}"
-                }
-                echo "deploying version ${VERSION}"
+                // withCredentials([
+                //     usernamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD)
+                // ]) {
+                //     echo "some script ${USER} ${PWD}"
+                // }
+                echo "deploying version ${params.VERSION}"
             }
         }
     }   
