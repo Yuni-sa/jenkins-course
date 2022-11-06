@@ -7,7 +7,7 @@ pipeline {
         booleanParam(name: 'executeTests', defaultValue: true, description: '')
     }
 
-    enviroment {
+    environment {
         NEW_VERSION = '1.3.0'
         //SERVER_CREDENTIALS = credentials('server-credentials')
     }
